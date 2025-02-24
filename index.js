@@ -774,11 +774,3 @@ if (!isReact && senderNumber === botNumber) {
   setTimeout(() => {
   connectToWA()
   }, 4000);
-ToWA()
-  }, 4000);
-t}`));
-  setTimeout(() => {
-  connectToWA()
-  }, 4000);
-ToWA()
-  }, 4000);

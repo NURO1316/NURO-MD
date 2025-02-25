@@ -43,7 +43,7 @@
     "MONGODB": {
       "description": " add mongodb url ",
       "required": true,
-      "value": ""
+      "value": "mongodb://mongo:TyNaTwWiRROciRZFKxovewZrfJMWoXnW@switchback.proxy.rlwy.net:50091"
     },
   
     "AUTO_VOICE": {

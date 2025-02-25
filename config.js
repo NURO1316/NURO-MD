@@ -9,7 +9,7 @@ SESSION_ID: process.env.SESSION_ID || "NURO-MD~S2RkwY7Z#XoIBBTx3V269I3bZ1MTzzv3J
 // add your Session Id 
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 // make true or false status auto seen
-MONGODB: process.env.MONGODB || "mongodb+srv://SithumKalhara:97531@cluster0.iva7dbo.mongodb.net/?retryWrites=true&w=majority",
+MONGODB: process.env.MONGODB || "mongodb://mongo:TyNaTwWiRROciRZFKxovewZrfJMWoXnW@switchback.proxy.rlwy.net:50091",
     //add your mongodb url
 AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
 // make true if you want auto reply on status 

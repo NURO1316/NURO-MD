@@ -198,8 +198,8 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const nuro = ('94721017862', '92760534874');
-    let isCreator = [tharaka,nuro, config.DEV]
+    const nuro = ('94721017862');
+    let isCreator = [nuro, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
 

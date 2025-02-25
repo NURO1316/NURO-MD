@@ -7,8 +7,10 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "NURO-MD~S2RkwY7Z#XoIBBTx3V269I3bZ1MTzzv3J1KVNU60fxagRouTiCZc",
 // add your Session Id 
-AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
+AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 // make true or false status auto seen
+MONGODB: process.env.MONGODB || "mongodb+srv://SithumKalhara:97531@cluster0.iva7dbo.mongodb.net/?retryWrites=true&w=majority",
+    //add your mongodb url
 AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
 // make true if you want auto reply on status 
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
@@ -31,11 +33,11 @@ OWNER_NUMBER: process.env.OWNER_NUMBER || "94721017862",
 // add your bot owner number
 OWNER_NAME: process.env.OWNER_NAME || "THARAKA DILSHAN",
 // add bot owner name
-DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴜʀᴏ*",
+DESCRIPTION: process.env.DESCRIPTION || "*© CREATED BY THARAKA DILSHAN....*",
 // add bot owner name    
 ALIVE_IMG: process.env.ALIVE_IMG || "https://imgur.com/JrxH6Tk.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *NURO-MD*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> HI I AM *NURO-MD*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs

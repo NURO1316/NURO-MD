@@ -38,6 +38,13 @@
       "required": true,
       "value": "true"  
     },    
+
+
+    "MONGODB": {
+      "description": " add mongodb url ",
+      "required": true,
+      "value": ""
+    },
   
     "AUTO_VOICE": {
       "description": "Make it true if want automatic voice reply .",

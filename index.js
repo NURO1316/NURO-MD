@@ -77,33 +77,23 @@ console.log("Session downloaded ✅")
 
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8000;
-async function connectToWA() {
-    const connectDB = require('./lib/mongodb');
-    connectDB();
-    const {
-        readEnv
-    } = require('./lib/database');
-    const config = await readEnv();
-    const prefix = config.PREFIX;
-    console.log("Connecting wa bot 🧬...");
-    const {
-        state,
-        saveCreds
-    } = await useMultiFileAuthState(__dirname + '/sessions/');
-    var {
-        version
-    } = await fetchLatestBaileysVersion();
-    const conn = makeWASocket({
-        logger: P({
-            level: 'silent'
-        }),
-        printQRInTerminal: false,
-        browser: Browsers.macOS("Firefox"),
-        syncFullHistory: true,
-        auth: state,
-        version
-    })
+const port = process.env.PORT || 9090;
+  
+  //=============================================
+  
+  async function connectToWA() {
+  console.log("Connecting to WhatsApp ⏳️...");
+  const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
+  var { version } = await fetchLatestBaileysVersion()
+  
+  const conn = makeWASocket({
+          logger: P({ level: 'silent' }),
+          printQRInTerminal: false,
+          browser: Browsers.macOS("Firefox"),
+          syncFullHistory: true,
+          auth: state,
+          version
+          })
       
   conn.ev.on('connection.update', (update) => {
   const { connection, lastDisconnect } = update

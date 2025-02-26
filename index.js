@@ -112,8 +112,8 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there NURO-MD User! n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet NURO-MD WhatsApp Bot.\n\n *Thanks for using NURO-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nENJOI BOT 🤛\n\n> © Powered BY NURO`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://imgur.com/JrxH6Tk.jpg` }, caption: up })
+  let up = `*Hello there NURO-MD User! n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet NURO-MD WhatsApp Bot.\n\n *Thanks for using NURO-MD \ud83d\udea9* \n\n*YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\n> https://github.com/NURO1316/NURO-MD.git \n\nENJOI BOT 🤛\n\n> © Powered BY NURO`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/kevmdg.png` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -150,7 +150,7 @@ const port = process.env.PORT || 9090;
     }
   if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REACT === "true"){
     const jawadlike = await conn.decodeJid(conn.user.id);
-    const emojis = ['❤️', '💸', '😇', '🍂', '💥', '💯', '🔥', '💫', '💎', '💗', '🤍', '🖤', '👀', '🙌', '🙆', '🚩', '🥰', '💐', '😎', '🤎', '✅', '🫀', '🧡', '😁', '😄', '🌸', '🕊️', '🌷', '⛅', '🌟', '🗿', '🇵🇰', '💜', '💙', '🌝', '🖤', '💚'];
+    const emojis = ['❤️', '💸', '😇', '🍂', '💥', '💯', '🔥', '💫', '💎', '💗', '🤍', '🖤', '👀', '🙌', '🙆', '🚩', '🥰', '💐', '😎', '🤎', '✅', '🫀', '🧡', '😁', '😄', '🌸', '🕊️', '🌷', '⛅', '🌟', '🗿', '🇵🇰', '💜', '💙', '🌝', '🖤', '💚','💀','🌈','💎','🚭','🇱🇰','💦'];
     const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
     await conn.sendMessage(mek.key.remoteJid, {
       react: {

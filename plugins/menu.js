@@ -15,9 +15,6 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-
-     const config = await readEnv();
-     
         let desc = `*👋 Hello ${pushname}*
     
      *꧁🧸ྀི*𝐍𝐔𝐑𝐎 𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔*🧸ྀི꧂*
@@ -76,7 +73,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *©NURO MD CREATED BY THARAKA DILSHANッ*`);
                         break;
                     case '2':               
-                        reply (`꧁*◈╾──────CONVERT COMMAND LIST──────╼◈꧂*
+                        repl (`꧁*◈╾──────CONVERT COMMAND LIST──────╼◈꧂*
 
 ╭────────●●►
 │ ➽ *convert* 

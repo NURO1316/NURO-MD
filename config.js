@@ -35,7 +35,7 @@ OWNER_NAME: process.env.OWNER_NAME || "THARAKA DILSHAN",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© CREATED BY THARAKA DILSHAN....*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://imgur.com/JrxH6Tk.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/kevmdg.png",
 // add img for alive msg
 LIVE_MSG: process.env.LIVE_MSG || "> HI I AM *NURO-MD*⚡",
 // add alive msg here 
